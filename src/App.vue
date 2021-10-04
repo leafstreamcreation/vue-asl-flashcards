@@ -1,15 +1,15 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <HelloWorld msg="Welcome to Your ASL-Flashcards app" />
+  <Login />
 </template>
 
 <script lang="ts">
 import { Options, Vue } from "vue-class-component";
-import HelloWorld from "./components/HelloWorld.vue";
+import Login from "./pages/Login.vue";
 
 @Options({
   components: {
-    HelloWorld,
+    Login,
   },
 })
 export default class App extends Vue {}

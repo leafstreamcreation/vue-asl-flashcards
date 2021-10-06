@@ -2,12 +2,8 @@
   <div>
     <h1>{{ msg }}</h1>
     <div class="main">
-      <div>
-        the list section
-      </div>
-      <div>
-        the detail view section
-      </div>
+      <div>the list section</div>
+      <div>the detail view section</div>
     </div>
   </div>
 </template>
@@ -27,7 +23,6 @@ export default class HelloWorld extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 * {
   margin: 0;
   padding: 0;

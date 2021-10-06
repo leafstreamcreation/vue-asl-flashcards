@@ -2,33 +2,32 @@
   <div>
     <h1>{{ toggleSignup }}</h1>
     <div class="main">
-        <input v-model="toggleSignup" type="checkbox" name="toggle" id="toggle">
-        <login-form v-if="!toggleSignup" emailPlaceholder="example@gmail.com"/>
-        <signup-form v-else />
+      <input v-model="toggleSignup" type="checkbox" name="toggle" id="toggle" />
+      <login-form v-if="!toggleSignup" emailPlaceholder="example@gmail.com" />
+      <signup-form emailPlaceholder="example@gmail.com" v-else />
     </div>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import LoginForm from "../components/LoginForm.vue";
 import SignupForm from "../components/SignupForm.vue";
 
 export default {
-    data() {
-        return {
-            toggleSignup: false
-        };
-    },
-    components: {
-        'login-form': LoginForm,
-        'signup-form': SignupForm,
-    }
-}
+  data() {
+    return {
+      toggleSignup: false,
+    };
+  },
+  components: {
+    "login-form": LoginForm,
+    "signup-form": SignupForm,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 * {
   margin: 0;
   padding: 0;
